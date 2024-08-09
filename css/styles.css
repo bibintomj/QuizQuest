@@ -1,0 +1,202 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --backgroundColor: #181a1b;
+    --foregroundColor: #ffffff;
+    --primaryAccentColor: rgb(151, 151, 254);
+    --secondaryAccentColor: rgb(71, 71, 71);
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--backgroundColor);
+    color: white;
+    padding: 50px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+#title-content {
+    font-size: 50px;
+    margin: 0;
+    color: var(--primaryAccentColor);
+}
+
+#title-sub {
+    font-weight: 200;
+    margin: 0;
+}
+
+#score-container {
+    text-align: center;
+}
+
+#score-container h3 {
+    font-weight: 400;
+    margin: 0;
+    margin-top: 30px;
+}
+
+#score-container h2 {
+    margin: 0;
+}
+
+#question-root-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#question-container {
+    text-align: center;
+    font-size: 50px;
+    
+}
+
+#options-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#options-container a {
+    text-align: center;
+    text-decoration: none;
+    min-width: 200px;
+    height: 150px;
+    padding: 20px;
+    margin: 20px;
+    align-items: center;
+    color: var(--foregroundColor);
+    border: 1px solid;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 0.2s;
+}
+
+#options-container a:hover {
+    background-color: var(--secondaryAccentColor);
+    scale: 1.1;
+}
+
+#options-container a:active {
+    /* background-color: var(--primaryAccentColor); */
+    scale: 1.15;
+}
+
+.generic-button {
+    height: 80px;
+    width: 400px;
+    border-radius: 30px;
+    margin-top: 100px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    background-color: var(--foregroundColor);
+    transition-duration: 0.2s;
+}
+
+.generic-button:hover {
+    scale:1.1;
+}
+
+#result-container {
+    text-align: center;
+    margin-top: 200px;
+}
+
+#result-container h1 {
+    font-size: 50px;
+}
+
+footer {
+    text-align: center;
+    opacity: 0.5;
+}
+
+#footer-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+#footer-links a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    margin: 8px;
+    border-radius: 10px;
+    transition-duration: 0.2s;
+}
+
+#footer-links a:hover {
+    opacity: 1;
+    background-color: rgba(88, 88, 88, 0.588);
+    scale: 1.1;
+}
+
+
+/* About Us */
+
+#about-root-container {
+   margin-top: 40px;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+}
+
+#about-root-container div {
+    padding: 20px;
+    margin: 10px;
+    border-radius: 20px;
+    background-color: #ffffff08;
+}
+
+
+/* Contact */
+.ui-state-default {
+    font-family: "Poppins", sans-serif;
+    border-radius: 20px;
+    border: none;
+    background-color: #ffffff00;
+    color: var(--foregroundColor);
+}
+
+.ui-accordion-header-active {
+    background-color: var(--primaryAccentColor);
+    
+}
+
+#contact-root-container {
+    margin-top: 40px;
+    width: 50%;
+}
+
+#contact-root-container div {
+    padding: 20px;
+    margin: 10px;
+    border-radius: 20px;
+    border: none;
+    background-color: #ffffff08;
+    color: var(--foregroundColor);
+}
+
+#contact-root-container div a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border-radius: 10px;
+    transition-duration: 0.2s;
+    background-color: rgba(88, 88, 88, 0.27);
+}
+
+#contact-root-container div a:hover {
+    background-color: rgba(88, 88, 88, 0.588);
+    scale: 1.1;
+}
